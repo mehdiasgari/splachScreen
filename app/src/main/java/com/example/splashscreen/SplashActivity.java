@@ -19,6 +19,6 @@ public class SplashActivity extends AppCompatActivity {
                 Intent i = new Intent(SplashActivity.this , MainActivity.class);
                 startActivity(i); // say what is the next activity after splash Activity.git
             }
-        } , 3000); // 3 seconds for waiting on splash Screen!
+        } , 3000); // 3 seconds for waiting on splash Screen!...
     }
 }

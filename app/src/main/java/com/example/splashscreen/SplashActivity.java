@@ -17,8 +17,10 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Intent i = new Intent(SplashActivity.this , MainActivity.class);
-                startActivity(i); // say what is the next activity after splash Activity.git
+                startActivity(i);
+                // say what is the next activity after splash Activity.git
+                finish();
             }
-        } , 3000); // 3 seconds for waiting on splash Screen!...if you have error in push use force push
+        } , 3000); // 3 seconds for waiting on splash Screen!
     }
 }

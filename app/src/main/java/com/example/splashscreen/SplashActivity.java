@@ -2,6 +2,7 @@ package com.example.splashscreen;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
@@ -15,8 +16,9 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-
+                Intent i = new Intent(SplashActivity.this , MainActivity.class);
+                startActivity(i); // say what is the next activity after splash Activity.git
             }
-        } , 3000);
+        } , 3000); // 3 seconds for waiting on splash Screen!
     }
 }
